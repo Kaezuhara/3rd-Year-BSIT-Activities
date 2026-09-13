@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Link Grid</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td {
+    width: 200px;
+    height: 150px;
+    border: 5px solid #661818;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: ease 0.25s;
+  }
+
+  a:hover {
+    scale: 1.2;
+  }
+</style>
+</head>
+<body>
+  <table>
+    <!-- Row 1 -->
+    <tr>
+      <td><a href="https://www.marvel.com/comics/characters/1009491/peter_parker" target="_blank" style="background-image:url('pics/marvels-spider-man-remastered_az82.jpg');"></a></td> <!--Spiderman-->
+      <td><a href="https://www.marvel.com/comics/characters/1009664/thor" target="_blank" style="background-image:url('pics/patty-thor-2.webp');"></a></td> <!--Thor-->
+      <td><a href="https://www.marvel.com/comics/characters/1009562/scarlet_witch" target="_blank" style="background-image:url('pics/SRV-12030_R-H-2022.webp');"></a></td> <!--Scarlet Witch-->
+    </tr>
+
+    <!-- Row 2 -->
+    <tr>
+      <td colspan="2"><a href="https://www.marvel.com/comics/characters/1009165/avengers" target="_blank" style="background-image:url('pics/464dc-16869672961719-1920.webp');"></a></td> <!--Avengers-->
+      <td><a href="https://www.marvel.com/comics/characters/1009351/hulk_bruce_banner" target="_blank"style="background-image:url('pics/TRB1420_comp_v422.1056-8e99dab.jpg');"></a></td> <!--Hulk-->
+    </tr>
+
+    <!-- Row 3 -->
+    <tr>
+      <td><a href="https://www.marvel.com/comics/characters/1009368/iron_man" target="_blank" style="background-image:url('pics/00017298-1600.webp');"></a></td> <!--Ironman-->
+      <td><a href="https://www.marvel.com/comics/characters/1009282/doctor_strange" target="_blank" style="background-image:url('pics/1e444a65-05fe-412a-9203-eb8592bb78d3_428cbeb7.webp');"></a></td> <!--Doctor Strange-->
+      <td><a href="https://www.marvel.com/comics/characters/1009189/black_widow_natasha_romanoff" target="_blank" style="background-image:url('pics/cumberbatch-doctor-strange-movie.avif');"></a></td> <!--Black Widow-->
+    </tr>
+  </table>
+</body>
+</html>
