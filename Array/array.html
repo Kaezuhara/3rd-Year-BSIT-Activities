@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  <style>
+    body{
+      background-color: rgb(43, 43, 43);
+    }
+
+    h1{
+      font-size: 32px;
+      color: white;
+    }
+
+    p{
+      font-size: 24px;
+      color: white;
+    }
+  </style>
+  <h1>Sino ka, busseng?</h1>
+  <p class="sentence"></p>
+  <script>
+    const fName = ['Inday', 'Paul Justin', 'Juan'];
+    const lName = ['De La Cruz', 'Batumbakal', 'Ferrer'];
+    const age = [20, 21, 26];
+
+    const userFName = 1;    // fName[1]
+    const userLName = 2;    // lName[2]
+    const userAge = 0;      // userAge[0]
+
+    const friendFName = 0;  // fName[0]
+    const friendLName = 1   // lName[1]
+    const friendAge = 2;    // age[2]
+
+    document.querySelector('.sentence').innerHTML = `
+      Your are ${fName[userFName]}, and your surname is ${lName[userLName]}. You are ${age[userAge]} years old. <br>
+      Your friend is ${fName[friendFName]}, and her surname is ${lName[friendLName]}. She is ${age[friendAge]} years old. <br> <br>
+      In summary, <br>
+      You: ${fName[userFName]} ${lName[userLName]}, ${age[userAge]} years old. <br>
+      Friend: ${fName[friendFName]} ${lName[friendLName]}, ${age[friendAge]} years old.
+    `;
+  </script>
+</body>
+</html>
