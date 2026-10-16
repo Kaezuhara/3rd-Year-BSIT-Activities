@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paul Justin Ferrer | BSIT Portfolio</title>
+  <meta name="description" content="Portfolio of a third-year BSIT student: networking, databases, and web development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Applies the saved theme before the page paints, so it doesn't flash -->
+  <script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a href="#home" class="brand">Paul Justin Ferrer</a>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="btn-icon" type="button" aria-label="Switch to dark mode">Dark</button>
+      <button id="menuToggle" class="btn-icon menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero wrap">
+      <div class="hero-text">
+        <p class="status"><span class="dot"></span>Currently building Cooking Ina</p>
+        <h1>Hi, I'm Paul Justin Ferrer.<br>I'm learning to build and connect things.</h1>
+        <p class="lead">Third-year BSIT student interested in networking, databases, and web development.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <figure class="avatar" data-initials="PJ">
+        <img src="images/profile.png" alt="Photo of Paul Justin Ferrer">
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section wrap">
+      <h2>About me</h2>
+      <div class="about">
+        <p>I'm a third-year Bachelor of Science in Information Technology student. My coursework has taken me from designing web pages to planning full network infrastructures and managing databases. I like projects where I can see how the pieces fit together. <!-- EDIT: replace with your own intro --></p>
+        <div>
+          <h3>Skills and tools</h3>
+          <ul class="chips">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (basics)</li>
+            <li>Figma</li>
+            <li>Cisco Packet Tracer</li>
+            <li>Network design</li>
+            <li>SQL</li>
+            <li>Database administration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section wrap">
+      <h2>Projects</h2>
+      <p class="section-note">Click any screenshot to enlarge it.</p>
+
+      <article class="project">
+        <button class="shot" type="button" data-label="Add images/facebook-clone.png">
+          <img src="images/facebook-clone.png" alt="Screenshot of my Facebook homepage clone">
+        </button>
+        <div class="info">
+          <h3>Facebook Homepage Clone</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li></ul>
+          <p>A recreation of the Facebook homepage using only HTML and CSS. It was my practice in page layout, positioning, and styling without frameworks or JavaScript.</p>
+          <p class="role"><strong>Solo project.</strong> I designed and coded it on my own.</p>
+          <a class="link" href="https://kaezuhara.github.io/Facebook-Homepage-Clone/" target="_blank" rel="noopener">View project</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <button class="shot" type="button" data-label="Add images/healthfirst-network.png">
+          <img src="images/healthfirst-network.png" alt="Packet Tracer topology of the HealthFirst clinic network">
+        </button>
+        <div class="info">
+          <h3>HealthFirst Diagnostic Clinic Network Infrastructure</h3>
+          <ul class="chips"><li>Cisco Packet Tracer</li><li>Networking</li></ul>
+          <p>An enterprise-grade network for a multi-branch healthcare organization, built in Cisco Packet Tracer. It connects a branch clinic in Quezon City to Headquarters for more than 150 users across every department, keeping patient data separate from guest traffic. It supports IP telephony, video teleconsultations, guest Wi-Fi, centralized records over the WAN, and high availability during link or device failures.</p>
+          <p class="role"><strong>Group project, team lead.</strong> I led the team and designed the network structure, diagram, and topologies, plus the IP addressing plan.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <button class="shot" type="button" data-label="Add images/sm-scholarship.png">
+          <img src="images/sm-scholarship.png" alt="Screenshot of the SM College Scholarship Database System website">
+        </button>
+        <div class="info">
+          <h3>SM College Scholarship Database System</h3>
+          <ul class="chips"><li>MySQL</li><li>Database design</li><li>3NF</li><li>Website</li></ul>
+          <p>A database system for managing scholarship records at SM College, built with MySQL. Our team normalized the data and tables up to Third Normal Form (3NF) to cut down duplicate data and keep records consistent, then built a website that works with the database.</p>
+          <p class="role"><strong>Group project.</strong> I mainly handled the database and its normalization to 3NF. My teammates built the website.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <button class="shot" type="button" data-label="Add images/sarinetwork.png">
+          <img src="images/sarinetwork.png" alt="SariNetwork app design screens">
+        </button>
+        <div class="info">
+          <h3>SariNetwork</h3>
+          <ul class="chips"><li>Figma</li><li>App design</li></ul>
+          <p>A centralized app design for the students and student-merchants of PUP Sta. Mesa. It gives students one place to discover and buy from fellow student-merchants, and gives merchants an easier way to showcase their products and reach customers on campus.</p>
+          <p class="role"><strong>Group project.</strong> I did most of the design work in Figma, especially the navbar and the customer side.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <button class="shot" type="button" data-label="Add images/amazon.png">
+          <img src="images/amazon.png" alt="Screenshot of my Amazon shopping platform project">
+        </button>
+        <div class="info">
+          <h3>Amazon</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li class="wip">In progress</li></ul>
+          <p>An online shopping platform I'm building while following SuperSimpleDev's JavaScript tutorial on YouTube. It's helping me practice JavaScript fundamentals by putting them to work in a real shopping site.</p>
+          <p class="role"><strong>Solo project.</strong> I am following the tutorial and coding it on my own.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <button class="shot missing" type="button" data-label="Screenshots coming soon" disabled></button>
+        <div class="info">
+          <h3>Cooking Ina</h3>
+          <ul class="chips"><li>Database Administration</li><li class="wip">In progress</li></ul>
+          <p>A Filipino cooking website we are building for our Database Administration class. You enter the local ingredients you already have, and the recipes are sorted to match, which makes meal planning easier.</p>
+          <p class="role"><strong>Group project.</strong></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section wrap">
+      <h2>Contact</h2>
+      <p class="section-note">Feel free to reach out.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:ferrerpauljustin31@gmail.com">ferrerpauljustin31@gmail.com</a></li>
+        <li><a href="https://github.com/Kaezuhara" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/paul-justin-ferrer-423445357/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>&copy; 2026 Paul Justin Ferrer. Built with HTML, CSS, and a little JavaScript.</p>
+  </footer>
+
+  <!-- Lightbox for project screenshots -->
+  <dialog id="lightbox" aria-label="Enlarged screenshot">
+    <button class="lb-close" type="button" aria-label="Close">&times;</button>
+    <img alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
